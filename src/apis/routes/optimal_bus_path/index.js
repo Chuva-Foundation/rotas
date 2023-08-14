@@ -3,4 +3,4 @@ const { routes } = require('controllers');
 
 module.exports = {
     post: route(routes.create, [])
-}
+};
