@@ -7,8 +7,13 @@ class BusLocation extends Model {}
 BusLocation.init(
   {
     id: {
-      type: Sequelize.STRING,
+      type: Sequelize.UUID,
+      defaultValue: Sequelize.UUIDV4,
       primaryKey: true
+    },
+    dataset_id: {
+      type: Sequelize.STRING,
+      allowNull: false
     },
     name: {
       type: Sequelize.STRING,
@@ -16,11 +21,11 @@ BusLocation.init(
     },
     latitude: {
       type: Sequelize.DECIMAL,
-      allowNull: false
+      allowNull: true
     },
     longitude: {
       type: Sequelize.DECIMAL,
-      allowNull: false
+      allowNull: true
     }
   },
   {
