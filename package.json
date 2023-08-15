@@ -13,7 +13,9 @@
     "posttest": "node ./scripts/post-test.js && yarn"
   },
   "dependencies": {
-    "axios": "^1.4.0"
+    "axios": "^1.4.0",
+    "dotenv": "^16.3.1",
+    "sequelize": "^6.32.1"
   },
   "devDependencies": {
     "@faker-js/faker": "^8.0.2",
